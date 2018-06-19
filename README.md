@@ -25,7 +25,7 @@ or
 * Run it locally:
 1. Download/ clone the repository 
 ```
-$ git clone ...
+$ git clone https://github.com/MarcinMrow/Feed-Reader-Testing.git
 ```
 2. Open **index.html** in the browser.
 
