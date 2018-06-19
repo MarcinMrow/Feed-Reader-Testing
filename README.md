@@ -18,7 +18,7 @@ Good tests give you the ability to quickly analyze whether new code breaks an ex
 
 ## How to run the project
 
-* [Click here](...).
+* [Click here](https://marcinmrow.github.io/Feed-Reader-Testing/).
 
 or 
 
