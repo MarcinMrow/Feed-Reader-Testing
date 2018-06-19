@@ -18,11 +18,6 @@ Good tests give you the ability to quickly analyze whether new code breaks an ex
 
 ## How to run the project
 
-* [Click here](https://marcinmrow.github.io/Feed-Reader-Testing/).
-
-or 
-
-* Run it locally:
 1. Download/ clone the repository 
 ```
 $ git clone https://github.com/MarcinMrow/Feed-Reader-Testing.git
