@@ -22,19 +22,16 @@ $(function() {
          * page?
          */
 
-        //
         it('are defined', function() {
             expect(allFeeds).toBeDefined();
             expect(allFeeds.length).not.toBe(0);
         });
-
 
         /* TODO: Write a test that loops through each feed
          * in the allFeeds object and ensures it has a URL defined
          * and that the URL is not empty.
          */
 
-        // test 1
         it('has a URL defined which is not empty', function() {
             allFeeds.forEach(function(feed) {
                 expect(feed.url).toBeDefined();
@@ -47,7 +44,6 @@ $(function() {
          * and that the name is not empty.
          */
 
-        // test 2
         it('has a name defined which is not empty', function() {
             allFeeds.forEach(function(feed) {
                 expect(feed.name).toBeDefined();
@@ -64,11 +60,11 @@ $(function() {
          * hiding/showing of the menu element.
          */
 
-        //
         let body = document.querySelector('body');
 
         it('has the element hidden by default', function() {
-            expect(body.className).toContain('menu-hidden');
+            expect($('body').hasClass('menu-hidden')).toBe(true);
+            // expect(body.className).toContain('menu-hidden');
         });
 
          /* TODO: Write a test that ensures the menu changes
@@ -76,8 +72,7 @@ $(function() {
           * should have two expectations: does the menu display when
           * clicked and does it hide when clicked again.
           */
-
-        // 
+ 
         let menuIconVisibility = document.querySelector('.menu-icon-link');
 
         it('changes visibility when the menu icon is clicked', function() {
@@ -87,7 +82,6 @@ $(function() {
             expect(body.className).toContain('menu-hidden');
         });
     });
-    
 
     /* TODO: Write a new test suite named "Initial Entries" */
     describe('Initial Entries', function() {
@@ -98,7 +92,6 @@ $(function() {
          * the use of Jasmine's beforeEach and asynchronous done() function.
          */
 
-        //
         beforeEach(function(done) {
             loadFeed(0, function() {
                 done();
@@ -121,11 +114,10 @@ $(function() {
          * Remember, loadFeed() is asynchronous.
          */
 
-        //
+        // define variables
         let feedSelection;
         let newFeedSelection;
 
-        //
         beforeEach(function(done) {
             loadFeed(0, function() {
                 let feedSelection = document.querySelector('.feed').innerHTML;
